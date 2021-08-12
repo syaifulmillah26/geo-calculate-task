@@ -133,6 +133,7 @@ Use docker and docker-compose for running the application
    ```
 
 2. Copy .env.example
+
    ensure you have provide the data that needed inside .env.example
 
    ```shell
