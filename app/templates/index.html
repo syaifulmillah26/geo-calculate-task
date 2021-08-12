@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% block head %}
+<title>Geo Coder - {{ title }}</title>
+{% endblock %} {% block content %}
+<div class="card">
+  <div class="card-header"></div>
+  <div class="card-body">
+    <h4>Find The Distance between two places</h4>
+    <form action="" id="getDistance">
+      <div class="form-group">
+        <label for="address">From</label>
+        <input type="text" class="form-control" id="origin" placeholder="Origin", value="Moskovskaya Kol'tsevaya Avtomobil'naya Doroga, Moscow, Russia", disabled>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="address2">To</label>
+        <input type="text" class="form-control" id="destination" placeholder="Destination">
+        <small id="error" class="text-danger"></small>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-outline-primary">Submit</button>
+    </form>
+
+    <br>
+    <span id="result" ></span>
+
+  </div>
+</div>
+{% endblock content %}
