@@ -57,10 +57,7 @@ Python 3.9.1
       (venv) $
       ```
 
-- Using pyenv and pyenv-virtualenv
-  **_TBD_**
-
-### Installing
+### Installing dependencies and run the app
 
 1. Make sure your virtualenv is activated
 
