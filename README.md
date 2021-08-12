@@ -74,7 +74,13 @@ Python 3.9.1
    -
    ```
 
-3. Installing pip dependencies
+3. Create logs folder
+
+   ```shell
+   (venv) $ mkdir logs
+   ```
+
+4. Installing pip dependencies
 
    Installing pip dependencies using requirements.txt
 
@@ -83,7 +89,7 @@ Python 3.9.1
    Collecting autopep8...
    ```
 
-4. Running development server
+5. Running development server
 
    ```shell
    (venv) $ flask run
@@ -100,7 +106,7 @@ Python 3.9.1
 
 Test Driven Development using python unittest. All the test code is below tests folder, there is unittest folder.
 
-1. Coverage
+1. Coverage command
 
    To run all test using make coverage command
 
