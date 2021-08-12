@@ -116,9 +116,10 @@ Test Driven Development using python unittest. All the test code is below tests 
    test_should_return_float_value (tests.unittest.controllers.test_home.TestHome) ... ok
    test_should_return_none (tests.unittest.controllers.test_home.TestHome) ... ok
    test_validate_an_empty_value (tests.unittest.controllers.test_home.TestHome) ... ok
+   test_validate_coordinates (tests.unittest.controllers.test_home.TestHome) ... ok
 
    ----------------------------------------------------------------------
-   Ran 3 tests in 2.405s
+   Ran 4 tests in 3.114s
 
    OK
    ```
