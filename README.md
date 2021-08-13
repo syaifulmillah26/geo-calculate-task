@@ -66,8 +66,9 @@ Python 3.9.1
    /path/to/your/venv/bin/python
    ```
 
-2. Copy env example file and adjust it with your needs
-   In this repo we provide the example file of the env file, you can copy from that example and adjust it.
+2. Copy env example file and adjust it
+
+   Please adjust GOOGLE_API_KEY variable
 
    ```shell
    (venv) $ cp .env.example .env
