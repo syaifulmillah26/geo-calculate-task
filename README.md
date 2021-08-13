@@ -43,6 +43,9 @@ Python 3.9.1
 
       ```shell
       $ pyenv global 3.9.1
+      $ export PATH="$PATH:$HOME/.rvm/bin"
+      $ eval "$(pyenv init --path)"
+      $ eval "$(pyenv init -)"
       -
       ```
 
