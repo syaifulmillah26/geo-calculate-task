@@ -1,14 +1,13 @@
 import json
 import http.client
-from flask import current_app, render_template, request, Response
+from flask import render_template, request, Response
 from app.helpers.home_helpers import HomeHelpers
 
 
 def index():
-    """ set secret for goolgeapis"""
-    secret = current_app.config.get("GOOGLE_API_KEY")
+    """ rendering template """
 
-    return render_template('index.html', secret=secret, title="Home")
+    return render_template('index.html', title="Home")
 
 
 def get_distance():

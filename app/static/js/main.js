@@ -19,9 +19,10 @@ $(document).ready(function () {
 
   // handling submit form using this to call http request
   $("#getDistance").submit(function (event) {
+    event.preventDefault();
     $("#destination").css("border", "1px solid #CED4DA");
     $("#error").text("");
-    event.preventDefault();
+    $("#errorResult").text("");
     var origin = $("#origin").val();
     var destination = $("#destination").val();
     var url = `${window.location.origin}/get-distance`;
@@ -42,7 +43,14 @@ $(document).ready(function () {
       })
       .fail(function (data) {
         $("#result").text("");
-        $("#error").text(`Errors: ${data.responseJSON}`);
+        var resp = data.responseJSON;
+        if (resp.includes("HTTPSConnectionPool")) {
+          $("#errorResult").text(
+            `Something went wrong! Please try another address`
+          );
+          return;
+        }
+        $("#errorResult").text(`${data.responseJSON}`);
       });
 
     return;

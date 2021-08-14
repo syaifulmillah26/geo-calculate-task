@@ -1,5 +1,5 @@
 import os
-from flask import Flask
+from flask import Flask, current_app
 from logging import getLogger
 
 from app.tools.blueprints import discover_blueprints
@@ -23,3 +23,13 @@ def create_app(test: bool = False) -> Flask:
                     f"Failed to register blueprint {blueprint}: {e}")
 
     return app
+
+
+app = create_app()
+
+
+def getenv(value, key):
+    return os.getenv(key, value)
+
+
+app.jinja_env.filters['getenv'] = getenv
