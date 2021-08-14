@@ -1,5 +1,5 @@
 import os
-from flask import Flask, current_app
+from flask import Flask
 from logging import getLogger
 
 from app.tools.blueprints import discover_blueprints
